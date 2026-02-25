@@ -74,8 +74,8 @@ const VoiceSandbox = () => {
             setStatus("connecting");
 
             try {
-                // Securely fetch token from local express backend (proxied by Vite)
-                const response = await fetch('/api/get-retell-token', {
+                // Securely fetch token from LIVE Render backend
+                const response = await fetch('https://axiostudio-api.onrender.com/api/get-retell-token', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                 });

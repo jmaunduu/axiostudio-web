@@ -140,7 +140,7 @@ const VoiceExpertise = () => {
 
                         {/* Left Column (Pinned Video Demo) */}
                         <div ref={leftColRef} className="w-full lg:w-1/2 flex flex-col gap-6 relative z-20 top-4">
-                            <div className="w-full aspect-[4/5] bg-[#111116] rounded-[2.5rem] p-8 border border-white/[0.05] shadow-2xl flex items-center justify-center relative overflow-hidden group">
+                            <div className="w-full min-h-[480px] lg:min-h-0 lg:aspect-[4/5] bg-[#111116] rounded-[2.5rem] p-8 border border-white/[0.05] shadow-2xl flex items-center justify-center relative overflow-hidden group">
 
                                 <audio
                                     ref={audioRef}

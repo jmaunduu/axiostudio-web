@@ -89,14 +89,14 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Menu Overlay */}
-            <div className={`fixed inset-0 bg-white/95 backdrop-blur-xl z-40 transition-all duration-500 flex flex-col items-center justify-center gap-8 ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
-                <a href="/#services" className="text-3xl font-sans font-light tracking-tight hover:text-black/50 transition-colors" onClick={() => setIsOpen(false)}>Services</a>
-                <a href="/#process" className="text-3xl font-sans font-light tracking-tight hover:text-black/50 transition-colors" onClick={() => setIsOpen(false)}>Process</a>
-                <Link to="/about" className="text-3xl font-sans font-light tracking-tight hover:text-black/50 transition-colors" onClick={() => setIsOpen(false)}>About Us</Link>
-                <Link to="/contact" className="text-3xl font-sans font-light tracking-tight hover:text-black/50 transition-colors" onClick={() => setIsOpen(false)}>Contact</Link>
+            <div className={`fixed inset-0 bg-[#0A0A0A]/95 backdrop-blur-xl z-40 transition-all duration-500 flex flex-col items-center justify-center gap-8 ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
+                <a href="/#services" className="text-3xl font-sans font-light text-white tracking-tight hover:text-white/50 transition-colors" onClick={() => setIsOpen(false)}>Services</a>
+                <a href="/#process" className="text-3xl font-sans font-light text-white tracking-tight hover:text-white/50 transition-colors" onClick={() => setIsOpen(false)}>Process</a>
+                <Link to="/about" className="text-3xl font-sans font-light text-white tracking-tight hover:text-white/50 transition-colors" onClick={() => setIsOpen(false)}>About Us</Link>
+                <Link to="/contact" className="text-3xl font-sans font-light text-white tracking-tight hover:text-white/50 transition-colors" onClick={() => setIsOpen(false)}>Contact</Link>
 
                 <Link to="/booking" onClick={() => setIsOpen(false)}>
-                    <button className="mt-4 px-8 py-4 rounded-full bg-black text-white text-lg font-medium">
+                    <button className="mt-4 px-8 py-4 rounded-full bg-white text-black text-lg font-medium">
                         Book a Call
                     </button>
                 </Link>
